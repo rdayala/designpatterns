@@ -1,0 +1,33 @@
+The Factory, as it's name suggests, is a pattern used to facilitate the creation of other objects.
+
+In real programming world, we need to create different objects with similar functionality.
+
+It deals with the problem of creating objects without specifying the exact class of object that will be created.
+
+Factory design pattern is used when we have a super class with multiple sub-classes and
+based on input, we need to return one of the sub-classes.
+
+Super class in factory pattern can be an interface or a normal java class.
+
+This pattern takes out the responsibility of instantiation of a class 
+from client program to the factory class. 
+
+We can apply Singleton pattern on Factory class or make the factory method static.
+
+Factory pattern provides approach to code for interface rather than implementation.
+
+Factory pattern removes the instantiation of actual implementation classes from client
+code, making it more robust, less coupled and easy to extend.
+
+The idea behind the Factory Method pattern is that it allows for the case 
+where a client doesn't know what concrete classes it will be required to create at runtime, 
+but just wants to get a class that will do the job.
+
+You'll see factories used in logging frameworks, and in a lot of scenarios where the client doesn't need to know about the concrete implementations. 
+It's a good approach to encapsulation.
+
+Create a factory class and provide a static method to get required sub-class object. 
+This method should take input. Based on the input value, create specific concrete class object, and return it. 
+
+
+
