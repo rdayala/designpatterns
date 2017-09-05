@@ -1,0 +1,29 @@
+The builder pattern is a design pattern that allows for the step-by-step creation 
+of complex objects using the correct sequence of actions. 
+
+The construction is controlled by a director object that only needs to know 
+the type of object it is to create.
+
+The "director" invokes "builder" services as it interprets the external format. 
+The "builder" creates part of the complex object each time it is called and 
+maintains all intermediate state. When the product is finished, the client retrieves the result from the "builder".
+
+Builder focuses on constructing a complex object step by step.
+
+In a Builder Design Pattern implementation the construction of a complex object is separated from its representation. 
+	Director class is unaware of Concrete builder class.
+	
+This enables us to create multiple representations using the same construction process.
+
+In Builder Pattern the class which invokes the the multiple steps(Director Class) to create 
+sub-parts of the final product is loosely coupled to the actual implementation of 
+those steps(Concrete Builder) using an abstract Builder interface in between.
+
+1. Builder is the base class(or Abstract base class) which all the ConcreteBuilder instances extend.
+2. Director holds a reference to a Builder. Director directs,i.e. is responsible for, creation of the product 
+using the interface provided to it by Builder.
+3. Each ConcreteBuilder is responsible for a variant of the product.
+4. Product object represents the complex final product which is being constructed.
+
+https://www.javabrahman.com/design-patterns/builder-design-pattern-in-java/
+
