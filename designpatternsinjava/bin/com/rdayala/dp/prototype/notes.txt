@@ -1,0 +1,44 @@
+In a Prototype Design Pattern implementation the type of object to be created 
+is specified using a prototypical instance. 
+New objects are created by copying(or cloning) this prototype.
+
+In simpler terms, in Prototype Pattern we keep an object of the type we want to 
+create and any new object is created by simply cloning this existing object.
+
+Prototype design pattern is used when the Object creation is a costly affair 
+and requires a lot of time and resources and you have a similar object already existing.
+
+Prototype pattern provides a mechanism to copy the original object to a new object 
+and then modify it according to our needs. 
+
+*** Prototype design pattern uses java cloning to copy the object.
+
+Scenarios in which Prototype Design Pattern can be used :
+
+1. Exact class to be instantiated is specified dynamically: When the class of 
+which instance is to be created is specified at runtime, then Prototype pattern can be used.
+
+2. Object creation using ‘new’ keyword is costlier: When the inherent cost of 
+object creation using ‘new’ keyword is more than simply cloning an existing standard object.
+
+Example Scenario :
+-------------------
+
+Suppose we have an Object that loads data from database. 
+Now we need to modify this data in our program multiple times, so it’s not
+a good idea to create the Object using new keyword and load all the data again from database.
+
+The better approach would be to clone the existing object into a new object 
+and then do the data manipulation.
+
+*** 
+Prototype design pattern mandates that the Object which you are copying 
+should provide the copying feature. 
+
+It should not be done by any other class. 
+However whether to use shallow or deep copy of the Object properties 
+depends on the requirements and its a design decision.
+
+http://www.journaldev.com/1440/prototype-design-pattern-in-java
+
+https://sourcemaking.com/design_patterns/prototype/java/1

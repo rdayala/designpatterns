@@ -1,0 +1,30 @@
+https://dzone.com/articles/design-patterns-uncovered-0
+
+Adapters in the Real World :
+A real world analogy always helps with the understanding of a design pattern. 
+The best example for the adapter pattern is based around AC power adapters. 
+Say you're visiting Europe from the US, with your laptop, which expects a US power supply. 
+To get your laptop plugged in, you're going to need to get a power adapter that accepts your US plug 
+and allows it to plug in to the European power outlet. The AC adapter knows how to deal with both sides, 
+acting as a middleman - this is the adapter pattern.
+
+Definition :
+
+Convert the interface of a class into another interface clients expect. 
+Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
+
+Usage :
+
+The main use of this pattern is when a class that you need to use 
+doesn't meet the requirements of an interface.
+
+The Target interface defines the domain specific interface that the Client used, 
+so the client collaborates with objects that implement the Target interface. 
+On the other side of things, the Adaptee is the existing interface that needs 
+adapting in order for our client to interact with it. 
+
+The Adapter adapts the Adaptee to the Target interface - in other words, 
+it translates the request from the client to the adaptee.
+
+ 
+https://www.javabrahman.com/design-patterns/adapter-design-pattern-in-java/

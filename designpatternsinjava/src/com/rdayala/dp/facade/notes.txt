@@ -1,0 +1,34 @@
+https://dzone.com/articles/design-patterns-uncovered-1
+
+https://www.javabrahman.com/design-patterns/facade-design-pattern-in-java/
+
+Operating systems are one such example - you don't see all the inner workings
+ of your computer, but the OS provides a simplified interface to use the machine. 
+Buildings also have a facade - the exterior of the building.
+
+In architecture, the facade of a building is often the most important from a 
+design standpoint, as it sets the tone for the rest of the building.
+
+Facade aims to make things look cleaner and more appealing.
+
+Provide a unified interface to a set of interfaces in a subsystem. 
+
+Façade defines a higher-level interface that makes the subsystem easier to use.
+
+Facade can be used to hide the inner workings of a third party library, or some legacy code.  
+All that the client needs to do is interact with the Facade, and not the subsystem that it is encompassing.
+
+Where would I use this pattern??
+
+As the concept behind facade is to simplify an interface, 
+service oriented architectures make use of the facade pattern.
+
+For example, in web services, one web service might provide access to a 
+number of smaller services that have been hidden from the caller by the facade.
+
+Example : Travel agent website
+
+We have a HotelBooker And a FlightBooker.
+The TravelFacade class allows the user to get their Hotel and Flight information in one call.
+
+It's just a simple approach to encapsulating data.
